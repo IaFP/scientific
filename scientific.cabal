@@ -86,6 +86,14 @@ library
     BangPatterns
     DeriveDataTypeable
     Trustworthy
+  Default-Extensions:
+        PartialTypeConstructors
+        FlexibleContexts
+        -- Needed for PTC annotations
+        QuantifiedConstraints
+        TypeOperators
+        ExplicitNamespaces
+        UndecidableInstances
 
   ghc-options:      -Wall
   build-depends:
